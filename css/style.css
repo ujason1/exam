@@ -105,6 +105,8 @@
   align-items: center;
   max-width: 1330px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20xp;
 }
 * body .big__container main .min_cards {
   width: 100%;
@@ -143,7 +145,49 @@
 * body .big__container main .min_cards .mobile-card .first {
   max-width: 384px;
 }
+* body .big__container main .produse_part {
+  margin-top: 137px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 10xp;
+       column-gap: 10xp;
+  align-items: center;
+}
+* body .big__container main .produse_part .left-produse {
+  background: url(../img/bg.svg), #1B2330 0px 0px/100% 100% no-repeat;
+  width: 615px;
+  height: 463px;
+  background-repeat: no-repeat;
+}
+* body .big__container main .produse_part .right-produse {
+  display: flex;
+  flex-direction: column;
+}
+* body .big__container main .produse_part .right-produse h3 {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  max-width: 406px;
+}
+* body .big__container main .produse_part .right-produse .product {
+  margin-top: 19px;
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  max-width: 563px;
+}
 
+@media (max-width: 1130px) {
+  * body .big__container main .produse_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (max-width: 760px) {
   * body .big__container header .header_bg {
     background: url(../img/dubl.svg), #1B2330 0px 0px/100% 100% no-repeat;
@@ -164,6 +208,33 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+  }
+  * body .big__container main .produse_part {
+    flex-direction: column;
+  }
+  * body .big__container main .produse_part .right-produse h3 {
+    color: #FFF;
+    text-align: start;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px; /* 133.333% */
+  }
+  * body .big__container main .produse_part .right-produse .product {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px; /* 150% */
+    max-width: 320px;
+  }
+}
+@media (max-width: 620px) {
+  * body .big__container main .produse_part .left-produse {
+    background-image: url(../img/copy.svg);
+    max-width: 370px;
+    height: 336px;
+    margin-left: -20px;
   }
 }
 @media (max-width: 500px) {
