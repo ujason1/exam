@@ -177,6 +177,29 @@
                             line-height: 24px; /* 150% */
                             max-width: 563px;
                         }
+                        .a_tags{
+                            display: flex;
+                            align-items: center;
+                            column-gap: 8px;
+                            margin-top: 24px;
+                            margin-bottom: 4px;
+
+                            a{
+                                color: #62E0D9;
+                                font-family: Open Sans;
+                                font-size: 16px;
+                                font-weight: 400;
+                                text-decoration-line: none;
+                            }
+                            svg{
+                                cursor: pointer;
+                            }
+                        }
+                        .a_line{
+                            width: 166px;
+                            height: 1px;
+                            background: #62E0D9;
+                        }
                     }
                 }
             }
