@@ -1,1 +1,152 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  background: #1B2330;
+}
+* body .big__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+* body .big__container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+* body .big__container nav .svg img {
+  width: 176px;
+  height: 52px;
+}
+* body .big__container nav .navigation {
+  display: flex;
+  -moz-column-gap: 57px;
+       column-gap: 57px;
+}
+* body .big__container nav .navigation a {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+* body .big__container nav .navigation a:hover {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+* body .big__container header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 33px;
+  margin: 75px auto;
+  max-width: 734px;
+}
+* body .big__container header .header_bg {
+  background: url(../img/illustration_1-01.svg), #1B2330 0px 0px/100% 100% no-repeat;
+  width: 100%;
+  max-width: 734px;
+  background-repeat: no-repeat;
+  height: 534px;
+}
+* body .big__container header h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px; /* 150% */
+}
+* body .big__container header p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 589px;
+  margin: 0 auto;
+}
+* body .big__container header a {
+  margin: 0 auto;
+  text-decoration: none;
+}
+* body .big__container header a button {
+  width: 280px;
+  height: 56px;
+  padding: 19px 95px;
+  background: linear-gradient(138deg, #63E1D9 -49.34%, #34A0CD 100%);
+  background: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+  border: none;
+  border-radius: 140px;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+* body .big__container header a button:hover {
+  background: #8ADAE3;
+  background: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+}
+
+@media (max-width: 760px) {
+  * body .big__container header .header_bg {
+    background: url(../img/dubl.svg), #1B2330 0px 0px/100% 100% no-repeat;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  * body .big__container header h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  * body .big__container header p {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+@media (max-width: 500px) {
+  * body .big__container nav .svg img {
+    width: 80px;
+    height: 24px;
+  }
+  * body .big__container nav .navigation {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  * body .big__container nav .navigation a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  * body .big__container nav .navigation a:hover {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration-line: none;
+  }
+  * body .big__container header .header_bg {
+    background-image: url(../img/illustration_media.svg);
+    width: 304px;
+    height: 225px;
+  }
+  * body .big__container header h1 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
+}/*# sourceMappingURL=style.css.map */
