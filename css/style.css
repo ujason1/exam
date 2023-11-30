@@ -97,6 +97,50 @@
   background: #8ADAE3;
   background: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
 }
+* body .big__container main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1330px;
+  margin: 0 auto;
+}
+* body .big__container main .min_cards {
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 140px;
+       column-gap: 140px;
+  row-gap: 79px;
+}
+* body .big__container main .min_cards .mobile-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+* body .big__container main .min_cards .mobile-card .min-svg {
+  margin: 0 auto;
+}
+* body .big__container main .min_cards .mobile-card h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 700;
+}
+* body .big__container main .min_cards .mobile-card p {
+  margin-top: 8px;
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  max-width: 349px;
+}
+* body .big__container main .min_cards .mobile-card .first {
+  max-width: 384px;
+}
 
 @media (max-width: 760px) {
   * body .big__container header .header_bg {
