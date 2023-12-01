@@ -152,7 +152,6 @@
                     align-items: center;
                     .left-produse{
                         background: url(../img/bg.svg), #1B2330 0px 0px / 100% 100% no-repeat;
-                        // width: 100%;
                         width: 615px;
                         height: 463px;
                         background-repeat: no-repeat;
@@ -177,28 +176,67 @@
                             line-height: 24px; /* 150% */
                             max-width: 563px;
                         }
-                        .a_tags{
+                        .both{
                             display: flex;
-                            align-items: center;
-                            column-gap: 8px;
-                            margin-top: 24px;
-                            margin-bottom: 4px;
-
-                            a{
-                                color: #62E0D9;
-                                font-family: Open Sans;
-                                font-size: 16px;
-                                font-weight: 400;
-                                text-decoration-line: none;
-                            }
-                            svg{
+                            flex-direction: column;
+                            max-width: 175px;
+                            justify-content: center;
+                            &:hover{
                                 cursor: pointer;
+                                .a_tags{
+                                    display: flex;
+                                    align-items: center;
+                                    column-gap: 8px;
+                                    margin-top: 24px;
+                                    margin-bottom: 4px;
+        
+                                    a{
+                                        color: #fff;
+                                        font-family: Open Sans;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        text-decoration-line: none;
+                                    }
+                                    .svg{
+                                        background-image: url(../img/Group\ 10.svg);
+                                        width: 17px;
+                                        height: 17px;
+                                        background-repeat: no-repeat;    
+                                    }
+                                }
+                                .a_line{
+                                    width: 166px;
+                                    height: 1px;
+                                    background: #fff;
+                                }
                             }
-                        }
-                        .a_line{
-                            width: 166px;
-                            height: 1px;
-                            background: #62E0D9;
+                            .a_tags{
+                                display: flex;
+                                align-items: center;
+                                column-gap: 8px;
+                                margin-top: 24px;
+                                margin-bottom: 4px;
+    
+                                a{
+                                    color: #62E0D9;
+                                    font-family: Open Sans;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    text-decoration-line: none;
+                                }
+                                
+                                .svg{
+                                    background-image: url(../img/strelka.svg);
+                                    width: 17px;
+                                    height: 17px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            .a_line{
+                                width: 166px;
+                                height: 1px;
+                                background: #62E0D9;
+                            }
                         }
                     }
                 }

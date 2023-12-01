@@ -180,7 +180,16 @@
   line-height: 24px; /* 150% */
   max-width: 563px;
 }
-* body .big__container main .produse_part .right-produse .a_tags {
+* body .big__container main .produse_part .right-produse .both {
+  display: flex;
+  flex-direction: column;
+  max-width: 175px;
+  justify-content: center;
+}
+* body .big__container main .produse_part .right-produse .both:hover {
+  cursor: pointer;
+}
+* body .big__container main .produse_part .right-produse .both:hover .a_tags {
   display: flex;
   align-items: center;
   -moz-column-gap: 8px;
@@ -188,17 +197,46 @@
   margin-top: 24px;
   margin-bottom: 4px;
 }
-* body .big__container main .produse_part .right-produse .a_tags a {
+* body .big__container main .produse_part .right-produse .both:hover .a_tags a {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration-line: none;
+}
+* body .big__container main .produse_part .right-produse .both:hover .a_tags .svg {
+  background-image: url(../img/Group\ 10.svg);
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
+}
+* body .big__container main .produse_part .right-produse .both:hover .a_line {
+  width: 166px;
+  height: 1px;
+  background: #fff;
+}
+* body .big__container main .produse_part .right-produse .both .a_tags {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+* body .big__container main .produse_part .right-produse .both .a_tags a {
   color: #62E0D9;
   font-family: Open Sans;
   font-size: 16px;
   font-weight: 400;
   text-decoration-line: none;
 }
-* body .big__container main .produse_part .right-produse .a_tags svg {
-  cursor: pointer;
+* body .big__container main .produse_part .right-produse .both .a_tags .svg {
+  background-image: url(../img/strelka.svg);
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
 }
-* body .big__container main .produse_part .right-produse .a_line {
+* body .big__container main .produse_part .right-produse .both .a_line {
   width: 166px;
   height: 1px;
   background: #62E0D9;
