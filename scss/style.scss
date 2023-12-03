@@ -374,10 +374,12 @@
             margin-top: -160px;
             width: 100%;
             background: #0B1524;
-            padding: 169px 82px 53px 120px;
+            // padding: 169px 82px 53px 120px;
+            padding-top: 169px;
+            padding-bottom: 53px;
             footer{
                 width: 100%;
-                max-width: 1480px;
+                max-width: 1440px;
                 margin: 53px auto;
                 svg{
                     margin-bottom: 52px;
@@ -385,9 +387,15 @@
                 .footer_navigation{
                     display: flex;
                     justify-content: space-between;
+                    column-gap: 15px;
                     .location{
                         display: flex;
                         column-gap: 16px;
+                        img{
+                            width: 24px;
+                            height: 24px;
+                            flex-shrink: 0;
+                        }
                         p{
                             max-width: 339px;
                             color: #FFF;
@@ -396,6 +404,91 @@
                             font-style: normal;
                             font-weight: 400;
                             line-height: 24px; /* 150% */
+                        }
+                    }
+                    .mail-call{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 16px;
+                        align-items: flex-start;
+                        .call{
+                            display: flex;
+                            column-gap:23.5px;
+                            p{
+                                height: 21px;
+                                color: #FFF;
+                                text-align: center;
+                                font-family: Open Sans;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 21px; 
+                            }
+                        }
+                    }
+                    .ul_tags{
+                        display: flex;
+                        column-gap:80px;
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 16px;
+                            li{
+                                list-style-type: none;
+                                a{
+                                    text-decoration: none;
+                                    color: #FFF;
+                                    font-family: Open Sans;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    &:hover{
+                                        color: #FFF;
+                                        font-family: Open Sans;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bg-nav{
+                        display: flex;
+                        column-gap: 12.49px;
+                        .first-bg{
+                            width: 31.224px;
+                            height: 31px;
+                            flex-shrink: 0;
+                            border-radius: 50px;
+                            border:1px solid #DFE4F0;
+                            &:hover{
+                                border:1px solid #62E0D9;
+                            }
+                            .first{
+                                background-image: url(../img/Object.png);
+                                width: 30.025px;
+                                height: 30.725px;
+                                flex-shrink: 0;
+                                &:hover{
+                                    background-image: url(../img/copy1.svg); 
+                                }
+                            }
+                            .seecond{
+                                background-image: url(../img/Object3.svg);
+                                width: 30.025px;
+                                height: 30.725px;
+                                flex-shrink: 0;
+                                &:hover{
+                                    background-image: url(../img/copy2.svg);
+                                }
+                            }
+                            .third{
+                                background-image: url(../img/Object2.svg);
+                                width: 30.025px;
+                                height: 30.725px;
+                                flex-shrink: 0;
+                                &:hover{
+                                    background-image: url(../img/copy3.svg);
+                                }
+                            }
                         }
                     }
                 }
@@ -433,6 +526,43 @@
                         align-items: center;
                         display: flex;
                         flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:960px){
+    *{
+        body{
+            .container{
+                footer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    svg{
+                        margin: 0 auto;
+                    }
+                    .footer_navigation{
+                        margin-top: 35px;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        align-items: flex-start;
+                        .mail-call{
+                            margin-top: 16px;
+                        }
+                        .ul_tags{
+                            margin-top: 59px;
+                            display: flex;
+                            flex-direction: column ;
+                            row-gap: 48.5px;
+                        }
+                        .bg-nav{
+                            margin: 56px auto; 
+                        }
                     }
                 }
             }

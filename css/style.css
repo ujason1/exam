@@ -375,11 +375,12 @@
   margin-top: -160px;
   width: 100%;
   background: #0B1524;
-  padding: 169px 82px 53px 120px;
+  padding-top: 169px;
+  padding-bottom: 53px;
 }
 * body .container footer {
   width: 100%;
-  max-width: 1480px;
+  max-width: 1440px;
   margin: 53px auto;
 }
 * body .container footer svg {
@@ -388,11 +389,18 @@
 * body .container footer .footer_navigation {
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 * body .container footer .footer_navigation .location {
   display: flex;
   -moz-column-gap: 16px;
        column-gap: 16px;
+}
+* body .container footer .footer_navigation .location img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 * body .container footer .footer_navigation .location p {
   max-width: 339px;
@@ -402,6 +410,94 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+* body .container footer .footer_navigation .mail-call {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: flex-start;
+}
+* body .container footer .footer_navigation .mail-call .call {
+  display: flex;
+  -moz-column-gap: 23.5px;
+       column-gap: 23.5px;
+}
+* body .container footer .footer_navigation .mail-call .call p {
+  height: 21px;
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+* body .container footer .footer_navigation .ul_tags {
+  display: flex;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+* body .container footer .footer_navigation .ul_tags ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+* body .container footer .footer_navigation .ul_tags ul li {
+  list-style-type: none;
+}
+* body .container footer .footer_navigation .ul_tags ul li a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+}
+* body .container footer .footer_navigation .ul_tags ul li a:hover {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+}
+* body .container footer .footer_navigation .bg-nav {
+  display: flex;
+  -moz-column-gap: 12.49px;
+       column-gap: 12.49px;
+}
+* body .container footer .footer_navigation .bg-nav .first-bg {
+  width: 31.224px;
+  height: 31px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 1px solid #DFE4F0;
+}
+* body .container footer .footer_navigation .bg-nav .first-bg:hover {
+  border: 1px solid #62E0D9;
+}
+* body .container footer .footer_navigation .bg-nav .first-bg .first {
+  background-image: url(../img/Object.png);
+  width: 30.025px;
+  height: 30.725px;
+  flex-shrink: 0;
+}
+* body .container footer .footer_navigation .bg-nav .first-bg .first:hover {
+  background-image: url(../img/copy1.svg);
+}
+* body .container footer .footer_navigation .bg-nav .first-bg .seecond {
+  background-image: url(../img/Object3.svg);
+  width: 30.025px;
+  height: 30.725px;
+  flex-shrink: 0;
+}
+* body .container footer .footer_navigation .bg-nav .first-bg .seecond:hover {
+  background-image: url(../img/copy2.svg);
+}
+* body .container footer .footer_navigation .bg-nav .first-bg .third {
+  background-image: url(../img/Object2.svg);
+  width: 30.025px;
+  height: 30.725px;
+  flex-shrink: 0;
+}
+* body .container footer .footer_navigation .bg-nav .first-bg .third:hover {
+  background-image: url(../img/copy3.svg);
 }
 
 @media (max-width: 1130px) {
@@ -418,6 +514,37 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 960px) {
+  * body .container footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  * body .container footer svg {
+    margin: 0 auto;
+  }
+  * body .container footer .footer_navigation {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+  * body .container footer .footer_navigation .mail-call {
+    margin-top: 16px;
+  }
+  * body .container footer .footer_navigation .ul_tags {
+    margin-top: 59px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48.5px;
+  }
+  * body .container footer .footer_navigation .bg-nav {
+    margin: 56px auto;
   }
 }
 @media (max-width: 760px) {
