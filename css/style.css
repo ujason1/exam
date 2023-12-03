@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
@@ -104,7 +105,6 @@
   flex-direction: column;
   align-items: center;
   max-width: 1330px;
-  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20xp;
 }
@@ -241,12 +241,85 @@
   height: 1px;
   background: #62E0D9;
 }
+* body .big__container main .bg {
+  margin-top: 120px;
+  width: 90%;
+}
+* body .big__container main .bg .bg-card {
+  background-image: url(../img/“\ copy.svg);
+  width: 55px;
+  height: 40px;
+  background-position: left;
+}
+* body .big__container main .cards {
+  transform: translatey(-130px);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1160px;
+  margin-top: 120px;
+}
+* body .big__container main .cards .card {
+  max-width: 360px;
+  height: 200px;
+  border-radius: 3.933px;
+  background: #202A3C;
+  box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+  padding: 40px 24px 26px 25px;
+}
+* body .big__container main .cards .card p {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+  letter-spacing: 0.5px;
+}
+* body .big__container main .cards .card .direction-bg {
+  margin-top: 24px;
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+* body .big__container main .cards .card .direction-bg .ps {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+* body .big__container main .cards .card .direction-bg .ps p {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 120% */
+  letter-spacing: 0.5px;
+}
+* body .big__container main .cards .card .direction-bg .ps .seo {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px; /* 142.857% */
+  letter-spacing: 0.5px;
+}
 
 @media (max-width: 1130px) {
   * body .big__container main .produse_part {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  * body .big__container main .bg {
+    width: 70%;
+  }
+  * body .big__container main .cards {
+    row-gap: 24px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 760px) {
