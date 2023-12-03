@@ -305,6 +305,72 @@
   line-height: 10px; /* 142.857% */
   letter-spacing: 0.5px;
 }
+* body .big__container main .input_card {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 863px;
+  border-radius: 9px;
+  background: #1B2330;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+  padding-top: 42px;
+  padding-bottom: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+* body .big__container main .input_card h3 {
+  text-align: center;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+* body .big__container main .input_card p {
+  margin: 16px auto;
+  max-width: 673px;
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+* body .big__container main .input_card .input_btn {
+  display: flex;
+  margin: 38px auto;
+  max-width: 719px;
+  justify-content: space-between;
+}
+* body .big__container main .input_card .input_btn input {
+  width: 100%;
+  max-width: 480px;
+  height: 48px;
+  padding-left: 38px;
+  background: #FFF;
+  background: drop-shadow(2px 3px 6px rgba(7, 4, 59, 0.16));
+  border-radius: 50px;
+}
+* body .big__container main .input_card .input_btn a {
+  text-decoration: none;
+}
+* body .big__container main .input_card .input_btn a button {
+  cursor: pointer;
+  border: none;
+  width: 200px;
+  height: 48px;
+  border-radius: 50px;
+  background: linear-gradient(130deg, #63E1D9 -26.63%, #34A0CD 100%);
+  background: drop-shadow(2px 3px 6px rgba(7, 4, 59, 0.16));
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 700;
+}
+* body .big__container main .input_card .input_btn a button:hover {
+  background: #8ADAE3;
+  background: drop-shadow(2px 3px 6px rgba(7, 4, 59, 0.16));
+}
 
 @media (max-width: 1130px) {
   * body .big__container main .produse_part {
@@ -369,6 +435,60 @@
     max-width: 370px;
     height: 336px;
     margin-left: -20px;
+  }
+  * body .big__container main .input_card {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 863px;
+    border-radius: 9px;
+    background: #1B2330;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 42px;
+    padding-bottom: 21px;
+  }
+  * body .big__container main .input_card h3 {
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  * body .big__container main .input_card .input_btn {
+    display: flex;
+    margin: 38px auto;
+    max-width: 719px;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  * body .big__container main .input_card .input_btn input {
+    max-width: 480px;
+    height: 48px;
+    padding-left: 38px;
+    background: #FFF;
+    background: drop-shadow(2px 3px 6px rgba(7, 4, 59, 0.16));
+    border-radius: 50px;
+  }
+  * body .big__container main .input_card .input_btn a {
+    text-decoration: none;
+  }
+  * body .big__container main .input_card .input_btn a button {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    max-width: 480px;
+    height: 48px;
+    border-radius: 50px;
+    background: linear-gradient(130deg, #63E1D9 -26.63%, #34A0CD 100%);
+    background: drop-shadow(2px 3px 6px rgba(7, 4, 59, 0.16));
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  * body .big__container main .input_card .input_btn a button:hover {
+    background: #8ADAE3;
+    background: drop-shadow(2px 3px 6px rgba(7, 4, 59, 0.16));
   }
 }
 @media (max-width: 500px) {
