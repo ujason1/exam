@@ -370,6 +370,37 @@
                 }
             }
         }
+        .container{
+            margin-top: -160px;
+            width: 100%;
+            background: #0B1524;
+            padding: 169px 82px 53px 120px;
+            footer{
+                width: 100%;
+                max-width: 1480px;
+                margin: 53px auto;
+                svg{
+                    margin-bottom: 52px;
+                }
+                .footer_navigation{
+                    display: flex;
+                    justify-content: space-between;
+                    .location{
+                        display: flex;
+                        column-gap: 16px;
+                        p{
+                            max-width: 339px;
+                            color: #FFF;
+                            font-family: Open Sans;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px; /* 150% */
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
