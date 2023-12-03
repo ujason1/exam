@@ -524,9 +524,6 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  * body .container footer svg {
-    margin: 0 auto;
-  }
   * body .container footer .footer_navigation {
     margin-top: 35px;
     display: flex;
