@@ -106,7 +106,7 @@
                 align-items: center;
                 max-width: 1330px;
                 padding-left: 20px;
-                padding-right: 20xp; 
+                padding-right: 20px; 
                 .min_cards{
                     width: 100%;
                     max-width: 880px; 
@@ -259,7 +259,6 @@
                     margin-top: 120px;
                     .card{
                         max-width: 360px;
-                        height: 200px;
                         border-radius: 3.933px;
                         background: #202A3C;
                         box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.10);
@@ -373,8 +372,7 @@
         .container{
             margin-top: -160px;
             width: 100%;
-            background: #0B1524;
-            // padding: 169px 82px 53px 120px;
+            background-color: #0B1524;
             padding-top: 169px;
             padding-bottom: 53px;
             footer{
@@ -496,7 +494,7 @@
         }
     }
 }
-@media (max-width:1130px){
+@media (max-width:1130px){ 
     *{
         body{
             .big__container{
@@ -507,11 +505,7 @@
                         align-items: center;
                     }
                     .bg{
-                        width: 70%;
-                        .bg-card{
-
-                        }
-
+                        width: 30%;
                     }
                     .cards{
                         row-gap: 24px;
@@ -608,6 +602,9 @@
                             }
                         }
                     }
+                    .bg{
+                        width: 55%;
+                    }
                 }
             }
         }
@@ -680,6 +677,9 @@
                             }
                         }
                     }
+                    .bg{
+                        width: 55%;
+                    }
                 }
             }
         }
@@ -720,6 +720,12 @@
                         font-size: 24px;
                         font-weight: 700;
                         line-height: 36px; /* 150% */
+                    }
+                }
+                main{
+                    margin-left: 20px;
+                    .bg{
+                        margin-left: -100px;
                     }
                 }
             }
